@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="body">
+  <div class="page">
+    <header id="header" class="header">
+      <button class="nav-toggle" aria-label="open navigation">
+        <span class="hamburger"></span>
+      </button>
+      <div class="container header__content">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img id="header-img" src="./images/catlogo.png" alt="CatLogic Solutions logo" class="logo__image">
+          </a>
+        </div>
+        <nav class="nav nav_hidden" id="nav-bar">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link nav-link">What We Offer</a></li>
+            <li><a href="#works" class="nav__link nav-link">Best Workers</a></li>
+            <li><a href="#contact" class="nav__link nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="offer" id="offer">
+        <div class="main-block">
+          <div class="container main-block__content">
+            <h1 class="main-block__title">Premium cat workers</h1>
+            <p class="main-block__subtitle">For home, office and industry</p>
+          </div>
+        </div>
+        <div class="reliable">
+          <div class="container reliable__content">
+            <h2 class="section-title">Reliable personnel</h2>
+            <p class="section-description">
+              Our cats are ultra-reliable, able to work day and night shifts, and capable of multitasking!
+            </p>
+          </div>
+        </div>
+        <div class="beautiful">
+          <div class="container beautiful__content">
+            <h2 class="section-title">Beautiful and small</h2>
+            <p class="section-description">
+              Our cats are visually pleasing, come in various colors and shapes, and each cat occupy only 1/10th of human working space!
+            </p>
+          </div>
+        </div>
+        <div class="friendly">
+          <div class="container friendly__content">
+            <h2 class="section-title">Sociable and friendly</h2>
+            <p class="section-description">
+              Our cats have a strong working ethics, they avoid any conflict, and they always work in a friendly and loving atmosphere!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="works" id="works">
+        <div class="container">
+          <h2 class="works__title">Our best workers:</h2>
+            <ul class="best">
+              <li class="best__item">
+                <a href="#works" class="best__card">
+                  <img class="best__image" src="./images/best-cat_01.jpg" alt="Otlichnik the cat">
+                  <h3 class="best__name">Otlichnik</h3>
+                </a>
+              </li>
+              <li class="best__item">
+                <a href="#works" class="best__card">
+                  <img class="best__image" src="./images/best-cat_02.jpg" alt="Lindy the cat">
+                  <h3 class="best__name">Lindy</h3>
+                </a>
+              </li>
+              <li class="best__item">
+                <a href="#works" class="best__card">
+                  <img class="best__image" src="./images/best-cat_03.jpg" alt="Kolya the cat">
+                  <h3 class="best__name">Kolya</h3>
+                </a>
+              </li>
+              <li class="best__item">
+                <a href="#works" class="best__card">
+                  <img class="best__image" src="./images/best-cat_04.jpg" alt="Arthur the cat">
+                  <h3 class="best__name">Arthur</h3>
+                </a>
+              </li>
+            </ul>
+          <h2 class="works__title">Our cats in action:</h2>
+          <div class="video-container" id="video">
+            <iframe class="video" src="https://www.youtube.com/embed/X3-kZZ4rn2Q" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/fzTm6YnCGe4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact__content">
+          <h2 class="contact-title">Contact Us!</h2>
+          <form id="form" class="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="name" class="form__label">Your name:</label>
+            <input class="form__input" type="text" name="name" id="name" placeholder="Cat Smith" required>
+            <label for="email" class="form__label">Your e-mail:</label>
+            <input class="form__input" type="email" name="email" id="email" placeholder="smith@cat.com" required>
+            <label for="text" class="form__label">Your message:</label>
+            <textarea class="form__text" id="text" required></textarea>
+            <div class="form__buttons">
+              <input class="form__button" type="submit" value="Send" id="submit">
+              <input class="form__button" type="reset" value="Reset" id="reset">
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="copyright">&#169; CatLogic, 2020 </p>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li><a href="#" class="footer-nav__link">Terms and conditions</a></li>
+            <li><a href="#" class="footer-nav__link">Privacy policy</a></li>
+            <li><a href="#" class="footer-nav__link">Cookie policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
